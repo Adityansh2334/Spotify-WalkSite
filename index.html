@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    File: index.html
+    Aditya Kumar Behera
+    Contact: adityabehera23@gmail.com
+    MIT Licensed - see http://opensource.org/licenses/MIT for details.
+    Anyone may freely use this code. Just don't sue me if it breaks stuff.
+    Created: 2/10/2020
+    Last Updated:
+
+    Modified version of my personal website, which displays various Spotify playlists
+    I have using the Spotify Play Button widget found on the Spotify developer docs:
+    https://developer.spotify.com/technologies/widgets/spotify-play-button/
+
+  -->
+
+  <!-- Custom Title Bar -->
+  <title>Spotify Play Button</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Custom Fonts -->
+  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+  rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="css/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+  <!-- Index CSS -->
+  <link href="css/index.css" rel="stylesheet">
+
+  <!-- Custom favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179397716-1"></script>
+
+  <!-- Google Analytics Tracking Tag. Track how people access my site and such.
+    (assuming they don't block ads or whatever from Google) -->
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+     
+     ga('create', 'UA-179397716-1', 'auto');
+     ga('send', 'pageview');
+     </script>
+    <script>
+     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+       })(window,document,'script','dataLayer','GTM-TWP2CTJ');
+     </script>
+
+</head>
+
+<body id="page-top">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Aditya Kumar</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" href="http://www.aditechptro.unaux.com/">Home</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#spotify">Spotify</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!--  Intro Section
+
+        Header image found at the following URL:
+        https://upload.wikimedia.org/wikipedia/commons/f/f5/Free-ride.jpg
+   -->
+  <header>
+    <video autoplay="" loop="" muted width="99%">
+      <source src="music.mp4" type="video/mp4" />
+    </video>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1 id="homeHeading">Spotify Playlists</h1>
+        <hr>
+        <p style="margin-top: 20%;">A few Spotify playlists I like.
+          <a class="text-white" href="https://open.spotify.com/user/31xckejus3uq3hea5g4e5rxoreya">
+            You can find my Spotify profile here.</a>
+        </p>
+        <a href="#spotify" class="btn btn-primary btn-xl page-scroll">Play Some Music!</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Spotify Play Button section -->
+  <section class="min-padding bg-primary" id="spotify">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Spotify Play Buttons</h2>
+          <hr class="light">
+        </div>
+      </div>
+
+      <!-- Info about these widgets -->
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p> These playlist widgets will link to the Spotify Player. You will need a Spotify account to listen
+              to more than 30 seconds of music, and the widget should prompt you to sign up after the 30 seconds
+              is up. You can find more of my
+              <a class="text-white" href="https://open.spotify.com/playlist/4Of1qil5O41WskKy3hpsWh">Spotify Playlists here.</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Spotify Play Widgets -->
+      <!--
+            Seems like a grid of 2 x 2 would work best:
+            Large to medium screens: 1 2 3 4
+            Small screens:  1 2
+                            3 4
+            Phones: each one on its own line
+      -->
+      <div class="row">
+
+        <!-- My PlayList - most popular with ~80 followers -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 spotify-center">
+          <iframe src="https://open.spotify.com/embed?uri=spotify:user:31xckejus3uq3hea5g4e5rxoreya:playlist:4Of1qil5O41WskKy3hpsWh"
+                  frameborder="0" allowtransparency="true"></iframe>
+        </div>
+
+        <!--  Spotify Playlist - second most popular, ~11 followers -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 spotify-center">
+          <iframe src="https://open.spotify.com/embed?uri=spotify:user:31xckejus3uq3hea5g4e5rxoreya:playlist:37i9dQZF1DX3rxVfibe1L0"
+                  frameborder="0" allowtransparency="true"></iframe>
+        </div>
+
+        <!-- Spotify Playlist - personal favorite -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 spotify-center">
+          <iframe src="https://open.spotify.com/embed?uri=spotify:user:31xckejus3uq3hea5g4e5rxoreya:playlist:37i9dQZEVXbMDoHDwVN2tF"
+                  frameborder="0" allowtransparency="true"></iframe>
+        </div>
+
+        <!--  Spotify Playlist  - also great -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 spotify-center">
+          <iframe src="https://open.spotify.com/embed?uri=spotify:user:31xckejus3uq3hea5g4e5rxoreya:playlist:37i9dQZF1DX6XE7HRLM75P"
+                  frameborder="0" allowtransparency="true"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="min-padding" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">
+            Contact <a href="mailto:jason[AT]downing.io" class="text-blue">Aditya</a></h2>
+          <hr class="primary">
+          <p>Interested in hiring Aditya? Have an open source project you
+            need help with? Feel free to reach out to him at the following email
+            address, or on LinkedIn. He is interested in working on challenging
+            projects, especially in the Java and web development areas of CS.</p>
+          <p>You can also find him on
+            <a href="https://github.com/Adityansh2334" class="text-blue">GitHub</a>
+            and view the projects that he works on in his free time.</p>
+        </div>
+        <div class="col-xs-4 col-lg-2 col-lg-offset-3 text-center">
+          <a href="mailto:adityabehera23[AT]gmail.com">
+            <i class="fa fa-envelope fa-5x sr-icons"></i>
+          </a>
+          <p><a href="mailto:adityabehera23[AT]gmail.com" class="text-blue">Email Aditya</a></p>
+        </div>
+        <div class="col-xs-4 col-lg-2 text-center">
+          <a href="https://www.linkedin.com/in/adityakumar01">
+            <i class="fa fa-linkedin-square fa-5x sr-icons"></i>
+          </a>
+          <p><a href="https://www.linkedin.com/in/adityakumar01" class="text-blue">Find Aditya on LinkedIn</a></p>
+        </div>
+        <div class="col-xs-4 col-lg-2 text-center">
+          <a href="https://github.com/Adityansh2334">
+            <i class="fa fa-github-square fa-5x sr-icons"></i>
+          </a>
+          <p><a href="https://github.com/Adityansh2334" class="text-blue">View Aditya's GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  THIS IS THE FOOTER - displays a copyright notice and
+        that Bootstrap powers this web page. -->
+  <div class="container">
+    <p class="text-center text-muted text-small">
+      Aditya Kumar Behera &copy; 2020 - 2021. All rights reserved.
+      Powered by <a href="http://www.getbootstrap.com/" class="text-blue">Bootstrap</a>.
+      Source on <a href="https://github.com/JasonD94/jasond94.github.io" class="text-blue">GitHub</a>.
+      Theme based on the
+      <a href="http://startbootstrap.com/template-overviews/creative/" class="text-blue">Creative Bootstrap Theme</a>
+      by <a href="http://startbootstrap.com/" class="text-blue">Start Bootstrap</a>.
+    </p>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript (for the GitHub links) -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/creative.min.js"></script>
+</body>
+</html>
