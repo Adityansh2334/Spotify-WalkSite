@@ -35,10 +35,12 @@
       https://stackoverflow.com/questions/29730977/how-do-i-set-the-height-of-an-iframe-with-the-min-height-property-in-the-body
       http://generatedcontent.org/post/21279324555/viewportunits
  */
-
+#contact{
+  padding-top: 13%;
+}
 .spotify-center {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 55.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
